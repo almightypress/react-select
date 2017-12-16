@@ -698,7 +698,7 @@ var Select$1 = function (_React$Component) {
 				this.setState({ required: false });
 			}
 
-			if (this.state.inputValue && this.props.value !== nextProps.value && this.props.onSelectResetsInput) {
+			if (this.state.inputValue && this.props.value !== nextProps.value && this.props.onSelectResetsInput && nextProps.value === '') {
 				this.setState({ inputValue: this.handleInputValueChange('') });
 			}
 		}
